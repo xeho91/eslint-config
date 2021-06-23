@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+
+    "declaration": true,
+
+    "types": ["node", "eslint"],
+
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules/"]
+}

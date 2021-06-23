@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@xeho91/eslint-config",
+  "version": "0.1.0",
+  "description": "xeho91's ESLint reusable configuration.",
+  "keywords": [
+    "ESLint",
+    "linter",
+    "JavaScript"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "Mateusz Kadlubowski",
+    "email": "xeho91@pm.me",
+    "url": "https://xeho91.com/"
+  },
+  "homepage": "https://github.com/xeho91/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeho91/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xeho91/eslint-config/issues"
+  },
+  "main": "index.js",
+  "files": [
+    "rules/**/*.js"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/eslint": "^7.2.13",
+    "@types/node": "^15.12.4",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-svelte3": "^3.2.0"
+  }
+}
