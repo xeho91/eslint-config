@@ -41,12 +41,10 @@ const config: Linter.Config = {
 		"svelte3",
 	],
 
-	overrides: [
-		{
-			files: ["*.svelte", "*.svx"],
-			processor: "svelte3/svelte3",
-		},
-	],
+	overrides: [{
+		files: ["*.svelte", "*.svx"],
+		processor: "svelte3/svelte3",
+	}],
 
 	env: {
 		es2020: true,
@@ -71,7 +69,7 @@ const config: Linter.Config = {
 		".svelte-kit/**/*",
 		".vercel/**/*",
 		".vercel_build_output/**/*",
-		"build",
+		"build/**/*",
 		// Unignore files starting with dot (usually config files)
 		"!.*",
 	],

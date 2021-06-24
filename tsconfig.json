@@ -5,6 +5,8 @@
     "module": "CommonJS",
     "moduleResolution": "node",
 
+    "outDir": "./lib/",
+
     "declaration": false,
 
     "types": ["node", "eslint"],

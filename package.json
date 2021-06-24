@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "@xeho91/eslint-config",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "xeho91's ESLint reusable configuration.",
   "keywords": [
     "ESLint",
@@ -22,9 +22,9 @@
   "bugs": {
     "url": "https://github.com/xeho91/eslint-config/issues"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "files": [
-    "rules/**/*.js"
+    "lib/**/*"
   ],
   "scripts": {
     "build": "tsc",
