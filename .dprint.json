@@ -5,12 +5,16 @@
   "useTabs": true,
   "indentWidth": 4,
   "newLineKind": "lf",
-  "includes": ["**/*.{json,js,cjs,ts,md"],
-  "excludes": ["**/node_modules", "**/*-lock.json", "**/*-lock.yaml"],
+  "includes": ["**/*.{ts,tsx,js,jsx,cjs,mjs,json,md}"],
+  "excludes": [
+    "**/node_modules",
+    "**/*-lock.json",
+    "**/*-lock.yaml"
+  ],
   "plugins": [
-    "https://plugins.dprint.dev/json-0.10.2.wasm",
-    "https://plugins.dprint.dev/typescript-0.44.2.wasm",
-    "https://plugins.dprint.dev/markdown-0.7.1.wasm"
+    "https://plugins.dprint.dev/json-0.12.0.wasm",
+    "https://plugins.dprint.dev/typescript-0.46.1.wasm",
+    "https://plugins.dprint.dev/markdown-0.8.0.wasm"
   ],
   "json": {
     "indentWidth": 2,
