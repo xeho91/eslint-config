@@ -45,6 +45,7 @@ const configurations = [
 	require("./plugins/compat").default,
 	require("./plugins/html").default,
 	require("./plugins/markdown").default,
+	hasModule("@types/node") && require("./plugins/node").default,
 	require("./plugins/promise").default,
 	require("./plugins/security").default,
 	hasModule("svelte") && require("./plugins/svelte3").default,
