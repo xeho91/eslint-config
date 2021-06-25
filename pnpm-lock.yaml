@@ -25,6 +25,7 @@ specifiers:
 dependencies:
   '@typescript-eslint/eslint-plugin': 4.28.0_4ec1e0eca7c6e4115e1e7a13008fdec2
   '@typescript-eslint/parser': 4.28.0_eslint@7.29.0+typescript@4.3.4
+  eslint-define-config: 1.0.8
   eslint-plugin-compat: 3.9.0_eslint@7.29.0
   eslint-plugin-html: 6.1.2
   eslint-plugin-markdown: 2.2.0_eslint@7.29.0
@@ -41,7 +42,6 @@ devDependencies:
   '@types/node': 15.12.4
   deepmerge: 4.2.2
   eslint: 7.29.0
-  eslint-define-config: 1.0.8
   rimraf: 3.0.2
   tslib: 2.3.0
   typescript: 4.3.4
@@ -770,7 +770,7 @@ packages:
 
   /eslint-define-config/1.0.8:
     resolution: {integrity: sha512-Vfjv/3l112BQ0s+Ua+WGNxtEyxj++IaFCiBkhjT1wlBWtbHpuZcI0t8eCnJZnJrdv0b9n2GK0mcmQsPRRjVCXg==}
-    dev: true
+    dev: false
 
   /eslint-plugin-compat/3.9.0_eslint@7.29.0:
     resolution: {integrity: sha512-lt3l5PHFHVEYSZ5zijcoYvtQJPsBifRiH5N0Et57KwVu7l/yxmHhSG6VJiLMa/lXrg93Qu8049RNQOMn0+yJBg==}
