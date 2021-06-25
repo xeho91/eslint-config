@@ -19,6 +19,7 @@ const configurations = [
 	require("./plugins/markdown").default,
 	hasModule("@types/node") && require("./plugins/node").default,
 	require("./plugins/promise").default,
+	require("./plugins/regexp").default,
 	require("./plugins/security").default,
 	hasModule("svelte") && require("./plugins/svelte3").default,
 	hasModule("typescript") && require("./plugins/typescript").default,
