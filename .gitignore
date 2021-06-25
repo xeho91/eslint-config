@@ -1,4 +1,2 @@
 node_modules/
-
-# Ignore any JS files, compiled by TypeScript
 lib/
