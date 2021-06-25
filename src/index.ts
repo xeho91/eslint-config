@@ -42,6 +42,8 @@ function hasModule(name: string) {
 const configurations = [
 	global,
 	require("./eslint").default,
+	require("./plugins/compat").default,
+	require("./plugins/html").default,
 	require("./plugins/promise").default,
 	require("./plugins/security").default,
 	hasModule("svelte") && require("./plugins/svelte3").default,
