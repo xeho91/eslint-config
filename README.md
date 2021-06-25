@@ -1,7 +1,7 @@
 # ESLint configuration
 
-**Extendable** [ESLint] configurations, which load plugins on conditions. If the
-project has:
+**Extendable** [ESLint] configuration, which load plugins on conditions.
+If the project has:
 
 - `@types/node` as dependency, then it will load [`node`] plugin
 - `svelte` as dependency, then it will load [`svelte3`] plugin
@@ -27,7 +27,7 @@ pnpm install --save-dev eslint @xeho91/eslint-config
 // .eslintrc.js
 
 module.exports = {
-	extends: ["@xeho91-config"],
+	extends: ["@xeho91/eslint-config"],
 };
 ```
 
