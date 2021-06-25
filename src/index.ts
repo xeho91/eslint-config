@@ -44,6 +44,7 @@ const configurations = [
 	require("./eslint").default,
 	require("./plugins/compat").default,
 	require("./plugins/html").default,
+	require("./plugins/markdown").default,
 	require("./plugins/promise").default,
 	require("./plugins/security").default,
 	hasModule("svelte") && require("./plugins/svelte3").default,
