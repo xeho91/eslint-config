@@ -1,7 +1,7 @@
-import type { Config } from "../types";
+import { defineConfig } from "eslint-define-config";
 
 // https://github.com/sveltejs/eslint-plugin-svelte3
-const config: Config = {
+const config = defineConfig({
 	plugins: ["svelte3"],
 
 	overrides: [{
@@ -13,6 +13,6 @@ const config: Config = {
 		"svelte3/ignore-styles": () => true,
 		"svelte3/typescript": true,
 	},
-}
+});
 
 export default config;

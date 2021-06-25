@@ -7,6 +7,7 @@ specifiers:
   '@typescript-eslint/parser': ^4.28.0
   deepmerge: ^4.2.2
   eslint: ^7.29.0
+  eslint-define-config: ^1.0.8
   eslint-plugin-compat: ^3.9.0
   eslint-plugin-html: ^6.1.2
   eslint-plugin-markdown: ^2.2.0
@@ -36,6 +37,7 @@ devDependencies:
   '@types/node': 15.12.4
   deepmerge: 4.2.2
   eslint: 7.29.0
+  eslint-define-config: 1.0.8
   rimraf: 3.0.2
   tslib: 2.3.0
   typescript: 4.3.4
@@ -755,6 +757,10 @@ packages:
   /escape-string-regexp/4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /eslint-define-config/1.0.8:
+    resolution: {integrity: sha512-Vfjv/3l112BQ0s+Ua+WGNxtEyxj++IaFCiBkhjT1wlBWtbHpuZcI0t8eCnJZnJrdv0b9n2GK0mcmQsPRRjVCXg==}
     dev: true
 
   /eslint-plugin-compat/3.9.0_eslint@7.29.0:

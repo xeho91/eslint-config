@@ -1,34 +1,6 @@
 /* eslint-disable unicorn/prefer-module, @typescript-eslint/no-var-requires */
 import merge from "deepmerge";
 
-import type { Linter } from "eslint";
-
-const global: Linter.Config = {
-	parserOptions: {
-		ecmaVersion: 2021,
-		sourceType: "module",
-	},
-
-	env: {
-		es2020: true,
-		node: true,
-		browser: true,
-	},
-
-	ignorePatterns: [
-		"node_modules/**/*",
-		".git/**/*",
-		".husky/**/*",
-		".svelte-kit/**/*",
-		".vercel/**/*",
-		".vercel_build_output/**/*",
-		"build/**/*",
-		"lib/**/*",
-		// Unignore files starting with dot (usually config files)
-		"!.*",
-	],
-};
-
 function hasModule(name: string) {
 	try {
 		/* eslint-disable-next-line unicorn/prefer-module */
@@ -40,7 +12,7 @@ function hasModule(name: string) {
 }
 
 const configurations = [
-	global,
+	require("./global").default,
 	require("./eslint").default,
 	require("./plugins/compat").default,
 	require("./plugins/html").default,

@@ -1,7 +1,7 @@
-import type { Config } from "../types";
+import { defineConfig } from "eslint-define-config";
 
 // https://github.com/eslint/eslint-plugin-markdown
-const config: Config = {
+const config = defineConfig({
 	extends: ["plugin:markdown/recommended"],
 
 	overrides: [{
@@ -10,6 +10,6 @@ const config: Config = {
 	}],
 
 	plugins: ["markdown"],
-};
+});
 
 export default config;

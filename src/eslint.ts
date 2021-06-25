@@ -1,26 +1,18 @@
-import type { Config } from "./types";
+import { defineConfig } from "eslint-define-config";
 
-const config: Config = {
+const config = defineConfig({
 	extends: ["eslint:recommended"],
 
-	// https://eslint.org/docs/rules
 	rules: {
-		"indent": [
-			"warn",
-			"tab",
-			{ SwitchCase: 1 },
-		],
+		"indent": ["warn", "tab", { SwitchCase: 1 }],
 
-		"max-len": [
-			"error",
-			{
-				code: 100,
-				tabWidth: 4,
-				ignoreStrings: true,
-				ignoreTemplateLiterals: true,
-				ignoreUrls: true,
-			},
-		],
+		"max-len": ["error", {
+			code: 100,
+			tabWidth: 4,
+			ignoreStrings: true,
+			ignoreTemplateLiterals: true,
+			ignoreUrls: true,
+		}],
 
 		"quotes": ["warn", "double", { avoidEscape: true }],
 
@@ -34,6 +26,6 @@ const config: Config = {
 
 		"func-names": ["error", "as-needed"],
 	},
-}
+});
 
 export default config;
