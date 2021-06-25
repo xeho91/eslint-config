@@ -45,15 +45,17 @@ function hasModule(name: string) {
 	}
 }
 
-const config = merge.all([
+const configs = [
 	global,
 	eslint,
 	pluginPromise,
 	pluginSecurity,
-	hasModule("typescript") ?? pluginSvelte3,
-	hasModule("typescript") ?? pluginTypeScript,
+	hasModule("svelte") && pluginSvelte3,
+	hasModule("typescript") && pluginTypeScript,
 	pluginUnicorn,
-].filter(Boolean));
+].filter(Boolean);
+
+const config = merge.all(configs);
 
 /* eslint-disable-next-line unicorn/prefer-module */
 module.exports = config;
