@@ -1,11 +1,5 @@
+/* eslint-disable unicorn/prefer-module, @typescript-eslint/no-var-requires */
 import merge from "deepmerge";
-
-import pluginPromise from "./plugins/promise";
-import pluginSecurity from "./plugins/security";
-import pluginSvelte3 from "./plugins/svelte3";
-import pluginTypeScript from "./plugins/typescript";
-import pluginUnicorn from "./plugins/unicorn";
-import eslint from "./eslint";
 
 import type { Linter } from "eslint";
 
@@ -45,17 +39,17 @@ function hasModule(name: string) {
 	}
 }
 
-const configs = [
+const configurations = [
 	global,
-	eslint,
-	pluginPromise,
-	pluginSecurity,
-	hasModule("svelte") && pluginSvelte3,
-	hasModule("typescript") && pluginTypeScript,
-	pluginUnicorn,
+	require("./eslint").default,
+	require("./plugins/promise").default,
+	require("./plugins/security").default,
+	hasModule("svelte") && require("./plugins/svelte3").default,
+	hasModule("typescript") && require("./plugins/typescript").default,
+	require("./plugins/unicorn").default,
 ].filter(Boolean);
 
-const config = merge.all(configs);
+const config = merge.all(configurations);
 
 /* eslint-disable-next-line unicorn/prefer-module */
 module.exports = config;
