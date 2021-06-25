@@ -24,6 +24,7 @@ const configurations = [
 	hasModule("svelte") && require("./plugins/svelte3").default,
 	hasModule("typescript") && require("./plugins/typescript").default,
 	require("./plugins/unicorn").default,
+	require("./plugins/xss").default,
 ].filter(Boolean);
 
 const config = merge.all(configurations);

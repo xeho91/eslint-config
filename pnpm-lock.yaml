@@ -17,6 +17,7 @@ specifiers:
   eslint-plugin-security: ^1.4.0
   eslint-plugin-svelte3: ^3.2.0
   eslint-plugin-unicorn: ^33.0.1
+  eslint-plugin-xss: ^0.1.10
   rimraf: ^3.0.2
   tslib: ^2.3.0
   typescript: ^4.3.4
@@ -33,6 +34,7 @@ dependencies:
   eslint-plugin-security: 1.4.0
   eslint-plugin-svelte3: 3.2.0_eslint@7.29.0
   eslint-plugin-unicorn: 33.0.1_eslint@7.29.0
+  eslint-plugin-xss: 0.1.10
 
 devDependencies:
   '@types/eslint': 7.2.13
@@ -894,6 +896,13 @@ packages:
       - supports-color
     dev: false
 
+  /eslint-plugin-xss/0.1.10:
+    resolution: {integrity: sha512-Wm2QIokqBq/IYi529xDXf9EOmVoQdAclaTEw1PNk+iyzyTiWssc1dqFz00PuB6nh01vA4phw0dnseY9b3Tsg1w==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      requireindex: 1.1.0
+    dev: false
+
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -1607,6 +1616,11 @@ packages:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /requireindex/1.1.0:
+    resolution: {integrity: sha1-5UBLgVV+91225JxacgBIk/4D4WI=}
+    engines: {node: '>=0.10.5'}
+    dev: false
 
   /reserved-words/0.1.2:
     resolution: {integrity: sha1-AKCUD5jNUBrqqsMWQR2a3FKzGrE=}
