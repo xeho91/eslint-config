@@ -11,7 +11,7 @@ const config: Config = {
 
 	settings: {
 		"svelte3/ignore-styles": () => true,
-		"svelte3/typescript": require("typescript"),
+		"svelte3/typescript": true,
 	},
 }
 

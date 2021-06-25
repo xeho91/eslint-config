@@ -1,4 +1,4 @@
-import merge from "merge";
+import merge from "deepmerge";
 
 import pluginPromise from "./plugins/promise";
 import pluginSecurity from "./plugins/security";
@@ -35,14 +35,25 @@ const global: Linter.Config = {
 	],
 };
 
-const config = merge(
+function hasModule(name: string) {
+	try {
+		/* eslint-disable-next-line unicorn/prefer-module */
+		require.resolve(name);
+		return true;
+	} catch {
+		return false;
+	}
+}
+
+const config = merge.all([
 	global,
 	eslint,
 	pluginPromise,
 	pluginSecurity,
-	pluginSvelte3,
-	pluginTypeScript,
+	hasModule("typescript") ?? pluginSvelte3,
+	hasModule("typescript") ?? pluginTypeScript,
 	pluginUnicorn,
-);
+].filter(Boolean));
 
+/* eslint-disable-next-line unicorn/prefer-module */
 module.exports = config;
