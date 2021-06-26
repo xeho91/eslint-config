@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "@xeho91/eslint-config",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "xeho91's ESLint reusable configuration.",
   "keywords": [
     "ESLint",
@@ -38,7 +38,6 @@
   "devDependencies": {
     "@types/eslint": "^7.2.13",
     "@types/node": "^15.12.4",
-    "deepmerge": "^4.2.2",
     "eslint": "^7.29.0",
     "rimraf": "^3.0.2",
     "tslib": "^2.3.0",
@@ -50,6 +49,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
+    "deepmerge": "^4.2.2",
     "eslint-define-config": "^1.0.8",
     "eslint-plugin-compat": "^3.9.0",
     "eslint-plugin-html": "^6.1.2",
