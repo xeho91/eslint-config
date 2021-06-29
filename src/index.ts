@@ -23,6 +23,7 @@ const configurations = [
 	require("./plugins/security").default,
 	hasModule("svelte") && require("./plugins/svelte3").default,
 	hasModule("typescript") && require("./plugins/typescript").default,
+	hasModule("react") && require("./plugins/react").default,
 	require("./plugins/unicorn").default,
 	require("./plugins/xss").default,
 ].filter(Boolean);
