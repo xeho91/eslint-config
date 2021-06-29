@@ -1,2 +1,4 @@
 node_modules/
-lib/
+
+# Build files
+dist/
