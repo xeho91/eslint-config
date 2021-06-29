@@ -25,19 +25,24 @@
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com"
 	},
+	"engines": {
+		"node": ">=14"
+	},
 	"main": "dist/index.js",
 	"files": [
 		"dist/**/*"
 	],
 	"scripts": {
 		"build": "tsc",
-		"clean": "rimraf ./dist",
+		"clean": "rimraf \"./dist\"",
 		"dev": "tsc --watch",
+		"format": "dprint fmt **/*",
 		"lint": "eslint \"./source/**/*.ts\""
 	},
 	"devDependencies": {
 		"@types/eslint": "^7.2.13",
 		"@types/node": "^15.12.4",
+		"dprint": "^0.15.3",
 		"eslint": "^7.29.0",
 		"rimraf": "^3.0.2",
 		"tslib": "^2.3.0",
