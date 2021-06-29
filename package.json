@@ -1,70 +1,70 @@
 {
-  "$schema": "https://json.schemastore.org/package",
-  "name": "@xeho91/eslint-config",
-  "version": "0.5.0",
-  "description": "xeho91's ESLint extendable configuration.",
-  "keywords": [
-    "ESLint",
-    "linter",
-    "JavaScript"
-  ],
-  "license": "MIT",
-  "author": {
-    "name": "Mateusz Kadlubowski",
-    "email": "xeho91@pm.me",
-    "url": "https://xeho91.com/"
-  },
-  "homepage": "https://github.com/xeho91/eslint-config",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xeho91/eslint-config.git"
-  },
-  "bugs": {
-    "url": "https://github.com/xeho91/eslint-config/issues"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "main": "lib/index.js",
-  "files": [
-    "lib/**/*"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "clean": "rimraf ./lib",
-    "dev": "tsc --watch",
-    "lint": "eslint ./src/**/*.ts"
-  },
-  "devDependencies": {
-    "@types/eslint": "^7.2.13",
-    "@types/node": "^15.12.4",
-    "eslint": "^7.29.0",
-    "rimraf": "^3.0.2",
-    "tslib": "^2.3.0",
-    "typescript": "^4.3.4"
-  },
-  "peerDependencies": {
-    "eslint": "^7.29.0"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.28.0",
-    "@typescript-eslint/parser": "^4.28.0",
-    "deepmerge": "^4.2.2",
-    "eslint-define-config": "^1.0.8",
-    "eslint-plugin-compat": "^3.9.0",
-    "eslint-plugin-html": "^6.1.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-markdown": "^2.2.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-react-native": "^3.11.0",
-    "eslint-plugin-react-redux": "^3.3.2",
-    "eslint-plugin-regexp": "^0.12.1",
-    "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-svelte3": "^3.2.0",
-    "eslint-plugin-unicorn": "^33.0.1",
-    "eslint-plugin-xss": "^0.1.10"
-  }
+	"$schema": "https://json.schemastore.org/package",
+	"name": "@xeho91/eslint-config",
+	"version": "0.5.0",
+	"description": "xeho91's ESLint extendable configuration.",
+	"keywords": [
+		"ESLint",
+		"linter",
+		"JavaScript"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Mateusz Kadlubowski",
+		"email": "xeho91@pm.me",
+		"url": "https://xeho91.com/"
+	},
+	"homepage": "https://github.com/xeho91/eslint-config",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xeho91/eslint-config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/xeho91/eslint-config/issues"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
+	"main": "dist/index.js",
+	"files": [
+		"dist/**/*"
+	],
+	"scripts": {
+		"build": "tsc",
+		"clean": "rimraf ./dist",
+		"dev": "tsc --watch",
+		"lint": "eslint \"./source/**/*.ts\""
+	},
+	"devDependencies": {
+		"@types/eslint": "^7.2.13",
+		"@types/node": "^15.12.4",
+		"eslint": "^7.29.0",
+		"rimraf": "^3.0.2",
+		"tslib": "^2.3.0",
+		"typescript": "^4.3.4"
+	},
+	"peerDependencies": {
+		"eslint": "^7.29.0"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.28.0",
+		"@typescript-eslint/parser": "^4.28.0",
+		"deepmerge": "^4.2.2",
+		"eslint-define-config": "^1.0.8",
+		"eslint-plugin-compat": "^3.9.0",
+		"eslint-plugin-html": "^6.1.2",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-markdown": "^2.2.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^5.1.0",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"eslint-plugin-react-native": "^3.11.0",
+		"eslint-plugin-react-redux": "^3.3.2",
+		"eslint-plugin-regexp": "^0.12.1",
+		"eslint-plugin-security": "^1.4.0",
+		"eslint-plugin-svelte3": "^3.2.0",
+		"eslint-plugin-unicorn": "^33.0.1",
+		"eslint-plugin-xss": "^0.1.10"
+	}
 }

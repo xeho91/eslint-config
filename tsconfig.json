@@ -1,18 +1,18 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "CommonJS",
+		"moduleResolution": "node",
 
-    "outDir": "./lib/",
+		"outDir": "./dist/",
 
-    "declaration": false,
+		"declaration": false,
 
-    "types": ["node", "eslint"],
+		"types": ["node", "eslint"],
 
-    "skipLibCheck": true,
-    "esModuleInterop": true
-  },
-  "exclude": ["node_modules/"]
+		"skipLibCheck": true,
+		"esModuleInterop": true
+	},
+	"exclude": ["node_modules/"]
 }
