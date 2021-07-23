@@ -1,18 +1,9 @@
 /* eslint-disable unicorn/prefer-module, @typescript-eslint/no-var-requires */
 import merge from "deepmerge";
 
-function hasModule(name: string) {
-	try {
-		/* eslint-disable-next-line unicorn/prefer-module */
-		require.resolve(name);
-		return true;
-	} catch {
-		return false;
-	}
-}
+import hasModule from "./helpers/has-module";
 
 const configurations = [
-	require("./global").default,
 	require("./eslint").default,
 	require("./plugins/compat").default,
 	require("./plugins/html").default,
@@ -30,5 +21,4 @@ const configurations = [
 
 const config = merge.all(configurations);
 
-/* eslint-disable-next-line unicorn/prefer-module */
 module.exports = config;
