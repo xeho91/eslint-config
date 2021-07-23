@@ -1,3 +1,3 @@
 module.exports = {
-	extends: ["./lib/index.js"],
+	extends: ["./dist/index.js"],
 }
